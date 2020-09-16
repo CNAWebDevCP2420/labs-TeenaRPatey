@@ -6,8 +6,14 @@
 <body>
 <p>
 <?php 
-$InterestRate = array(.0725, .0750, .0775, .0800, .0825, .0850, .0875);
-echo($InterestRate);
+$InterestRate = array(0.0725, 0.0750, 0.0775, 0.0800, 0.0825, 0.0850, 0.0875);
+echo "$InterestRate[0]<br />";
+echo "$InterestRate[1]<br />";
+echo "$InterestRate[2]<br />";
+echo "$InterestRate[3]<br />";
+echo "$InterestRate[4]<br />";
+echo "$InterestRate[5]<br />";
+echo "$InterestRate[6]<br />";
 ?>
 </p>
 </body>
