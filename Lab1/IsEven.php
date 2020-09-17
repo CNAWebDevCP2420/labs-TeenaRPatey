@@ -15,8 +15,6 @@
     $y = round($x);
     $Result = (($y % 2 == 0) ? "true":"false");
     echo '$x is even: ', $Result; 
-   
-   
 ?>
 </p>
 </body>
