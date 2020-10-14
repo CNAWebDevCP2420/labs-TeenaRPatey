@@ -7,7 +7,7 @@
 <body>
     <h1>Bowling Tournament Registration</h1>
     <?php
-        if (isset($_POST['submit'])){
+        /* if (isset($_POST['submit'])){
                 if (isset($_POST['name']) && isset($_POST['age']) && isset($_POST['average'])){
                     $BowlerName = addslashes($_POST['name']);
                     $BowlerAge = addslashes($_POST['age']);
@@ -29,7 +29,27 @@
                     echo "<p>To register for the bowling tournament, enter your name, age and average and
                         click the Register button.</p>"
                 }
+        } */
+        //using fopen and fclose
+        $BowlerName = addslashes($_POST['name']);
+        $BowlerAge = addslashes($_POST['age']);
+        $BowlerAverage = addslashes($_POST['average']);
+
+        $BowlersFile = fopen("bowlers.txt", "ab");
+        if(is_writeable("bowlers.txt")){
+            if (fwrite($BowlersFile, $BowlerName . ", " . $BowlerAge . ", " . $BowlerAverage . "\n")){
+                echo "<p>" . stripslashes($_POST['name']) . 
+                        " has been registered for the tournament!</p>\n";
+            }
+            else {
+                echo "<p>Registration error!</p>";
+            }
         }
+        else {
+            echo "Unable to register at this time.\n";
+            fclose($BowlersFile);
+        }
+
     ?>
    
     
