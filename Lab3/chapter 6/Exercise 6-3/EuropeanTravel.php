@@ -56,7 +56,7 @@
                 $Distances[$StartIndex][$EndIndex])){
                 echo "<p>The distance from $StartIndex to $EndIndex is " . 
                 $Distances[$StartIndex][$EndIndex] . " kilometers, or " . 
-                round($KMtoMiles * $Distances[$StartIndex][$EndIndex]), 2) . 
+                round(($KMtoMiles * $Distances[$StartIndex][$EndIndex]),2) . 
                 " miles.</p>\n";
             }
             else {
@@ -67,7 +67,7 @@
     ?>
     <form action="EuropeanTravel.php" method="post">
     <p>Starting City:
-   <!--  <select name="Start">
+    <select name="Start">
         <?php//insert the list of city names
             foreach ($Distances as $City => $OtherCities){
                 echo "<option value='$City'";
@@ -90,7 +90,7 @@
                     echo ">$City</option>\n";
                 }
             ?>
-    </select> -->
+    </select>
     </p>
     <p><input type="submit" name="submit" value="Calculate Distance" /></p>
     </form>
