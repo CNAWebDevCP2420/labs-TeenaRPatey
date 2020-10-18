@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+<title>Bug Report</title>
+</head>
+
+<body>
+    <h1>Bug Report Submission Form</h1>
+    <form action = "BugReport.php" method = "POST" enctype="multipart/form-data">
+    <p>Product Name and Version <input type="text" name="name" /></p>
+    <p>Type of Hardware <input type="text" name="hardware" /></p>
+    <p>Operating System <input type="text" name="os" /></p>
+    <p>Frequency of Occurrence <input type="text" name="frequency" /></p>
+    <p>Proposed Solutions</p>
+    <textarea name="solutions" rows="10" cols="55" ></textarea><br />
+    <!-- submit report and write to file -->
+    <input type ="submit" name ="submit_btn" value="Submit Report" />
+    <!-- submit report, write to file, and reopen this html file to do another report -->
+    <!-- <input type ="submit" name ="submit_btn" value="Create New Report" /> -->
+    <!-- redirect to UpdatedBugReport.html to do a file update -->
+    <!-- <a href="UpdatedBugReport.html"><input type ="submit" name ="submit_btn" value="Update Existing Report" /></a> -->
+    <!-- <br /> -->
+    </form>
+    
+</body>
+</html>

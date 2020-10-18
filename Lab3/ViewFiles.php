@@ -6,8 +6,8 @@
 
 <body>
     <?php
-        mkdir("files");
-        
+        mkdir("files");//make if directory doesn't exist
+
         $Dir = "files";
         $DirEntries = scandir($Dir);
         echo "<table border='1' width='100%' >\n";

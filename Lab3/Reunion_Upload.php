@@ -30,7 +30,6 @@
                                 if (fwrite($InformationFile, $PhotoUpload . ", " . $Name . ", " . $Description . "\n")){
                                     echo "<p>Thank you for submitting a photo!</p>\n";
                                     echo "<a href='ShowReunionPhotos.php'>Click here to view all photo submissions.</a>";
-                                    
                                 }
                                 else {
                                     echo "<p>Cannot add your photo.</p>\n";        
