@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>Interview</title>
+     <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <h2>Interview</h2>
+     <form id="form1" method="POST" action="Interview.php">
+          <div id="form">
+               <h3>Interviewer Information</h3>
+               <p>Interviewer's Name<br/> <input type="text" name="intName"/></p>
+               <p>Position<br/> <input type="text" name="position" /></p>
+               <p>Date of Interview (year-month-day) <input type="text" name="interviewDate" value="XXXX-XX-XX" /></p>
+               <h3>Candidate's Information</h3>
+               <p>Candidate's Name<br/> <input type="text" name="canName" /></p>
+               <p>Communication Abilities<br/> <input type="text" name="communication" /></p>
+               <p>Professional Appearance<br/> <input type="text" name="appearance" /></p>
+               <label for="comSkills">Computer Skills</label> <br>
+               <textarea id="comSkills" name="comSkills" rows="6" cols="50"></textarea>
+               <br/>
+               <label for="knowledge">Business Knowledge</label> <br>
+               <textarea id="knowledge" name="knowledge" rows="6" cols="50"></textarea>
+               <br/>
+               <label for="comments">Comments</label> <br>
+               <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
+          </div>
+          <p style="text-align: center"><input type="reset" value="Clear Form" />
+          <input type="submit" value="Submit" /></p>
+     </form>
+     <p style="text-align: center"><a href="DisplayCandidates.php">View Candidates</a></p>
+</body>
+</html>
