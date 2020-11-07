@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>Bug Report</title>
+   
+     <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+     <h2 style="text-align:center">Bug Report</h2>
+     <form id="form1" method="POST" action="BugReport.php">
+          <div id="form">
+               <p>Product Name & Version <input type="text" name="productName"/></p>
+               <p>Type of Hardware <input type="text" name="hardware" /></p>
+               <p>Operating System <input type="text" name="os" /></p>
+               <p>Frequency of Occurrence <input type="text" name="frequency" /></p>
+               <label for="solutions">Proposed Solutions</label> <br>
+               <textarea id="solutions" name="solutions" rows="6" cols="50"></textarea>
+          </div>
+          <p style="text-align: center"><input type="reset" value="Clear Form" />
+          <input type="submit" value="Submit" /></p>
+     </form>
+     <p style="text-align: center"><a href="BugReport.php">Create New Bug Report</a></p>
+     <p style="text-align: center"><a href="DisplayBugReport.php">Update Existing Report</a></p>
+</body>
+</html>
