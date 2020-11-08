@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Airline Survey</title>
+     
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h2>Airline Survey</h2>
+     <form id="form1" name="SurveyForm" method="POST" action="Survey.php" >
+          <div id="form">
+               <p>Date of Flight <input type="text" name="flightDate"/></p>
+               <p>Time of Flight <input type="text" name="flightTime"/></p>
+               <p>Flight Number <input type="text" name="flightNumber" /></p>
+               <p>
+                    <label for="friendliness">Friendliness of customer staff</label><br>
+                    <input type="radio" name="friendliness" value="No Opinion" required/>
+                    No Opinion
+                    <input type="radio" name="friendliness" value="Poor"/>
+                    Poor
+                    <input type="radio" name="friendliness" value="Fair"/>
+                    Fair
+                    <input type="radio" name="friendliness" value="Good"/>
+                    Good
+                    <input type="radio" name="friendliness" value="Excellent"/>
+                    Excellent<br>
+                    
+               </p>
+               <p>
+                    <label for="storage">Space for luggage storage</label><br>
+                    <input type="radio" name="storage" value="No Opinion" required/>
+                    No Opinion
+                    <input type="radio" name="storage" value="Poor"/>
+                    Poor
+                    <input type="radio" name="storage" value="Fair"/>
+                    Fair
+                    <input type="radio" name="storage" value="Good"/>
+                    Good
+                    <input type="radio" name="storage" value="Excellent"/>
+                    Excellent<br>
+                    
+               </p>
+               <p>
+                    <label for="comfort">Comfort of seating</label><br>
+                    <input type="radio" name="comfort" value="No Opinion" required/>
+                    No Opinion
+                    <input type="radio" name="comfort" value="Poor"/>
+                    Poor
+                    <input type="radio" name="comfort" value="Fair"/>
+                    Fair
+                    <input type="radio" name="comfort" value="Good"/>
+                    Good
+                    <input type="radio" name="comfort" value="Excellent"/>
+                    Excellent<br>
+                    
+               </p>
+               <p>
+                    <label for="cleanliness">Cleanliness of aircraft</label><br>
+                    <input type="radio" name="cleanliness" value="No Opinion" required/>
+                    No Opinion
+                    <input type="radio" name="cleanliness" value="Poor"/>
+                    Poor
+                    <input type="radio" name="cleanliness" value="Fair"/>
+                    Fair
+                    <input type="radio" name="cleanliness" value="Good"/>
+                    Good
+                    <input type="radio" name="cleanliness" value="Excellent"/>
+                    Excellent<br>
+                   
+               </p>
+               <p>
+                    <label for="noise">Noise level of aircraft</label><br>
+                    <input type="radio" name="noise" value="No Opinion" required/>
+                    No Opinion
+                    <input type="radio" name="noise" value="Poor"/>
+                    Poor
+                    <input type="radio" name="noise" value="Fair"/>
+                    Fair
+                    <input type="radio" name="noise" value="Good"/>
+                    Good
+                    <input type="radio" name="noise" value="Excellent"/>
+                    Excellent<br>
+                    
+               </p>
+               
+          </div>
+          <p style="text-align: center"><input type="reset" value="Clear Form" />
+          <input type="submit" value="Submit" /></p>
+     </form>
+     <p style="text-align: center"><a href="ViewSurveys.php">View Survey Results</a></p>
+   </body>
+   </html>

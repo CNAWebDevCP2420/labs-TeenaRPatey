@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Candidates</title>
-<link href="main.css" rel="stylesheet" type="text/css">
+
 
 </head>
 
@@ -55,14 +55,13 @@
                $ComputerSkills = stripslashes($_POST['comSkills']);
                $Knowledge = stripslashes($_POST['knowledge']);
                $Comments = stripslashes($_POST['comments']);
-
                $SQLstring = "INSERT INTO $TableName VALUES(NULL, '$Interviewer', '$Position', '$Date', '$Candidate', 
                                                             '$Communication', '$Appearance', '$ComputerSkills', '$Knowledge', '$Comments')";
                $QueryResult = @mysqli_query($DBConnect, $SQLstring);
                if ($QueryResult === FALSE)
-                    echo "<p>ALERT: Unable to execute the query.</p>" . "<p>Error code " . mysqli_errno($DBConnect) . ": " . mysqli_error($DBConnect) . "</p>";
+                    echo "<p>aLERTUnable to execute the query.</p>" . "<p>Error code " . mysqli_errno($DBConnect) . ": " . mysqli_error($DBConnect) . "</p>";
                 else
-                    echo "<h3>Thank you for submitting your report.</h3>";
+                    echo "<h1>Thank you for submitting your report.</h1>";
                
                mysqli_close($DBConnect);
                
@@ -70,7 +69,7 @@
      }
      
      ?>
-     <p style="text-align: center"><a href="DisplayCandidates.php">View Candidates</a></p>
+     <p style="text-align: center"><a href="DisplayCandidates.php">Display Candidates</a></p>
      
 
 </body>
