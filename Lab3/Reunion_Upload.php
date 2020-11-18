@@ -50,6 +50,17 @@
 
         
     ?>
+    <h1>Photo Upload</h1>
+    <form action = "Reunion_Upload.php" method = "POST" enctype="multipart/form-data">
+    <p>Name <input type="text" name="name" /></p>
+    <p>Image Description <input type="text" name="description" /></p>
+    <input type ="hidden" name="MAX_FILE_SIZE" value ="30000" /><br />
+    File to upload:<br />
+    <input type="file" name="new_file" /><br />
+    (30000 byte limit)<br />
+    <input type ="submit" name ="upload" value="Upload the File" />
+    <br />
+    </form>
    
 </body>
 </html>
