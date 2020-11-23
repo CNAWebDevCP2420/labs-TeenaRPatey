@@ -7,7 +7,7 @@
 
 <body>
      <?php 
-          $DBConnect = @mysqli_connect("localhost", "root", "nIcholaskIan1");
+          $DBConnect = @mysqli_connect("localhost", "root", "Password01");
           if ($DBConnect === FALSE)
           echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_connect_errno() . ":" . mysqli_connect_error() . "</p>";
 

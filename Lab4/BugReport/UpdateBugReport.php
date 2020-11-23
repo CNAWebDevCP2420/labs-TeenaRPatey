@@ -14,7 +14,7 @@
           }
           else {
                $DBName = "bugreport";
-               $DBConnect = @mysqli_connect("localhost", "root", "nIcholaskIan1", $DBName);
+               $DBConnect = @mysqli_connect("localhost", "root", "Password01", $DBName);
                if ($DBConnect === FALSE)
                echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_connect_errno() . ":" . mysqli_connect_error() . "</p>";
 
